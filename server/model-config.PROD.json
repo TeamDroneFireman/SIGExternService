@@ -14,7 +14,7 @@
     ]
   },
   "SIGExtern": {
-    "dataSource": "mongodb_prod",
+    "dataSource": null,
     "public": true
   }
 }
