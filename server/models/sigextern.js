@@ -8,7 +8,7 @@ module.exports = function(SigExtern) {
     */
     switch (address) {
       case '263 Avenue Général Leclerc, 35700 Rennes, France' :
-        means=[
+        means = [
           {'id':'1','form': 'WATERPOINT_SUSTAINABLE','role':'string',
             'isExternal':true, 'location':
             {'lat' : 48.114121,'long' : -1.636343}},
@@ -24,7 +24,7 @@ module.exports = function(SigExtern) {
         ];
         break;
       case 'Place du Parlement de Bretagne, 35000 Rennes, France' :
-        means=[
+        means = [
           {'id':'5','form': 'WATERPOINT_SUSTAINABLE','role':'string',
             'isExternal':true, 'location':
             {'lat' : 48.113743,'long' : -1.677971}},
@@ -42,6 +42,7 @@ module.exports = function(SigExtern) {
             {'lat' : 48.113443,'long' : -1.676021}}
         ];
         break;
+      default: means = [];
     }
     cb(null, means);
   };
