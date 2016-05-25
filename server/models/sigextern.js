@@ -18,7 +18,8 @@ module.exports = function(SigExtern) {
           {'id':'3','form': 'WATERPOINT_SUSTAINABLE','role':'string',
             'isExternal':true, 'location':
             {'lat' : 48.113218,'long' : -1.650110}},
-          {'id':'4','form': 'SOURCE','role':'string', 'isExternal':true, 'location':
+          {'id':'4','form': 'SOURCE','role':'string',
+            'isExternal':true, 'location':
             {'lat' : 48.115228,'long' : -1.642710}}
         ];
         break;
