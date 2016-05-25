@@ -10,37 +10,136 @@ module.exports = function(SigExtern) {
     switch (address) {
       case '263 Avenue Général Leclerc, 35700 Rennes, France' :
         means = [
-          {'id':'1','form': 'WATERPOINT_SUSTAINABLE','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.114121,'long' : -1.636343}},
-          {'id':'2','form': 'WATERPOINT','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.112228,'long' : -1.640710}},
-          {'id':'3','form': 'WATERPOINT_SUSTAINABLE','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.113218,'long' : -1.650110}},
-          {'id':'4','form': 'SOURCE','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.115228,'long' : -1.642710}}
+          {
+            'form': 'WATERPOINT_SUSTAINABLE',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.114121,
+                'longitude': -1.636343
+              }
+            },
+            'isExternal':true,
+            'role': 'WATER',
+            'id': '1',
+            'name': 'Point d\'eau'
+          },
+          {
+            'form': 'WATERPOINT',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.112228,
+                'longitude': -1.640710
+              }
+            },
+            'isExternal':true,
+            'role': 'WATER',
+            'id': '2',
+            'name': 'Point d\'eau'
+          },
+          {
+            'form': 'WATERPOINT_SUSTAINABLE',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.113218,
+                'longitude': -1.650110
+              }
+            },
+            'isExternal':true,
+            'role': 'WATER',
+            'id': '3',
+            'name': 'Point d\'eau'
+          },
+          {
+            'form': 'SOURCE',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.114121,
+                'longitude': -1.636343
+              }
+            },
+            'isExternal':true,
+            'role': 'DEFAULT',
+            'id': '4',
+            'name': 'source'
+          }
         ];
         break;
       case 'Place du Parlement de Bretagne, 35000 Rennes, France' :
         means = [
-          {'id':'5','form': 'WATERPOINT_SUSTAINABLE','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.113743,'long' : -1.677971}},
-          {'id':'6','form': 'SOURCE','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.108743,'long' : -1.679821}},
-          {'id':'7','form': 'WATERPOINT_SUSTAINABLE','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.109743,'long' : -1.674821}},
-          {'id':'8','form': 'WATERPOINT','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.112743,'long' : -1.677621}},
-          {'id':'9','form': 'SOURCE','role':'string',
-            'isExternal':true, 'location':
-            {'lat' : 48.113443,'long' : -1.676021}}
+          {
+            'form': 'WATERPOINT_SUSTAINABLE',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.113743,
+                'longitude': -1.677971
+              }
+            },
+            'isExternal':true,
+            'role': 'WATER',
+            'id': '5',
+            'name': 'Point d\'eau'
+          },
+          {
+            'form': 'SOURCE',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.112228,
+                'longitude': -1.640710
+              }
+            },
+            'isExternal':true,
+            'role': 'DEFAULT',
+            'id': '6',
+            'name': 'source'
+          },
+          {
+            'form': 'WATERPOINT_SUSTAINABLE',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.109743,
+                'longitude': -1.674821
+              }
+            },
+            'isExternal':true,
+            'role': 'WATER',
+            'id': '7',
+            'name': 'Point d\'eau'
+          },
+          {
+            'form': 'WATERPOINT',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.114121,
+                'longitude': -1.636343
+              }
+            },
+            'isExternal':true,
+            'role': 'WATER',
+            'id': '8',
+            'name': 'Point d\'eau'
+          },
+          {
+            'form': 'SOURCE',
+            'location': {
+              'geopoint': {
+                'altitude': 0,
+                'latitude': 48.114121,
+                'longitude': -1.636343
+              }
+            },
+            'isExternal':true,
+            'role': 'DEFAULT',
+            'id': '9',
+            'name': 'source'
+          }
         ];
         break;
       default:
