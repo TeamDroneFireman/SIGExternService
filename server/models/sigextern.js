@@ -1,7 +1,8 @@
 module.exports = function(SigExtern) {
 
   SigExtern.getSigListMock = function(address, cb) {
-    var means;
+    console.log('test :',address);
+    var means = [];
     /*
       For information :
       0.004500 ~= 400m
@@ -42,7 +43,9 @@ module.exports = function(SigExtern) {
             {'lat' : 48.113443,'long' : -1.676021}}
         ];
         break;
-      default: means = [];
+      default:
+        means = [];
+        break;
     }
     cb(null, means);
   };
