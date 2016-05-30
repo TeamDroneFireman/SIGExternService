@@ -1,7 +1,6 @@
 module.exports = function(SigExtern) {
 
   SigExtern.getSigListMock = function(address, cb) {
-    console.log('test :',address);
     var means = [];
     /*
       For information :
