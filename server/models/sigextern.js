@@ -56,8 +56,8 @@ module.exports = function(SigExtern) {
             'location': {
               'geopoint': {
                 'altitude': 0,
-                'latitude': 48.114121,
-                'longitude': -1.636343
+                'latitude': 48.114421,
+                'longitude': -1.631353
               }
             },
             'isExternal':true,
